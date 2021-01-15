@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Muhammad Zubair</title>
+  <link href="assets\images/mypic.png" type="image/png">
   <meta name="keywords" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.">
   <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.">
 
@@ -21,7 +22,7 @@
 </head>
 <body>
 <div id="content-wrapper">
-  <header class="header header--bg">
+  <header class="header header--bg" id="home">
     <div class="container">
       <nav class="navbar">
         <div class="navbar-header">
@@ -30,20 +31,22 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span> 
           </button>
-          <a class="navbar-brand" href="#">It's Zubair</a>
+          <a class="navbar-brand" href="#">I'm Zubair</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">SKILL</a></li> 
-            <li><a href="#">PORTFOLIO</a></li> 
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skills">SKILL</a></li> 
+            <li><a href="#services">SERVICES</a></li> 
+             
 
             <!--
+            <li><a href="#">PORTFOLIO</a></li>
             <li><a href="#">TEAM</a></li> 
             <li><a href="#">BLOG</a></li> 
             -->
-            <li><a href="#">CONTACT</a></li> 
+            <li><a href="#contact">CONTACT</a></li> 
           </ul>
         </div>
       </nav>
@@ -51,17 +54,17 @@
         <span class="header__content__block">HELLO</span>
         <h1 class="header__content__title">I'M Muhammad Zubair</h1>
         <ul class="header__content__sub-title">
-          <li>Computer Engineering Student at UET, Lahore <span class="padding">&#45;</span></li>
-          <li>Web & Cloud Enthusiast <span class="padding"></span></li>
+          <li><strong>Computer Engineering Student at UET, Lahore </strong><span class="padding">&#45;&#45;&#45;&#45;</span></li>
+          <li><strong>Web & Cloud Enthusiast</strong> <span class="padding"></span></li>
           <!--<li>PHOTOGRAPHAR</li>-->
         </ul>
-        <a class="header__button" href="#">Want to Know Me?</a>
+        <a class="header__button" href="#about">Want to Know Me?</a>
       </div>
       <div class="social-icon pull-right">
         <ul>
+          <li><a href="https://www.linkedin.com/in/muhammad-zubair-b63547176/"><i class="fab fa-linkedin-in"></i></a></li>
           <li><a href="https://mobile.facebook.com/muhammadzubair.shafiq.7"><i class="flaticon-facebook-letter-logo"></i></a></li>
           <li><a href="#"><i class="flaticon-twitter-logo"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/muhammad-zubair-b63547176/"><i class="fab fa-linkedin-in"></i></a></li>
           <!--- <li><a href="#"><i class="flaticon-dribbble-logo"></i></a></li>   -->
         </ul>
       </div>
@@ -70,10 +73,10 @@
 
   <section class="about">
     <div class="container about__container--narrow">
-      <div class="page-section">
+      <div class="page-section" id="about">
         <h2 class="page-section__title">ABOUT ME</h2>
           <img class="page-section__title-style" src="assets/images/title-style.png" alt="">
-          <p class="page-section__paragraph">I am a Computer Engineering Student at University of Engineering & Technology, Lahore. I am Cloud Computing learner and Enthusiast. I also have good Web Frontend skills. </p>
+          <p class="page-section__paragraph">I am a <strong>Computer Engineering Student</strong> at <strong>University of Engineering & Technology, Lahore</strong>. I am <strong>Azure Cloud Computing</strong> learner and Enthusiast. I also have <strong>Good</strong> skills in <strong>Web Frontend</strong> and <strong>Beginner</strong> skills in <strong>Django</strong> Framework for <strong>Backend</strong>. </p>
           <div class="row gutters-80">
             <div class="col-md-4">
               <div class="about__image">
@@ -81,24 +84,31 @@
               </div>
             </div>
             <div class="col-md-8 about__content">
+
+              <!--
               <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+              -->
               <div class="row row--margin-top">
                 <div class="col-md-4">
                   <p class="about__bio"><strong>NAME :</strong> Muhammad Zubair</p>
                   <p class="about__bio"><strong>AGE :</strong> 21</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6">
                   <p class="about__bio"><strong>Headline :</strong> Web & Cloud Computing Enthusiast</p>
                   <p class="about__bio"><strong>LOCATION :</strong> Lahore, Pakistan</p>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-4">
-                  <a class="button button--colorful button--margin" href="#">DOWNLOAD CV</a>
+                  <a class="button button--colorful button--margin" href="https://drive.google.com/file/d/12FUG3OagoARg2v34L3cNhDos5ylwQfHj/view?usp=sharing" download="Muhammad Zubair -- CV">DOWNLOAD CV</a>
                 </div>
+
+                
                 <div class="col-md-4">
-                  <a class="button button--colorful button--margin" href="#">HIRE ME</a>
+                  <a class="button button--colorful button--margin" href="https://drive.google.com/file/d/12FUG3OagoARg2v34L3cNhDos5ylwQfHj/view?usp=sharing">View CV</a>
                 </div>
+                
+                
               </div>
             </div>
           </div>
@@ -106,17 +116,21 @@
     </div>
   </section>
 
-  <section class="skill skill--bg">
+  <section class="skill skill--bg" id="skills">
     <div class="container skill__container--narrow">
       <div class="page-section">
         <h2 class="page-section__title page-section__title--white">MY SKILLS</h2>
         <img class="page-section__title-style" src="assets/images/title-style-white.png" alt="">
+
+        <!--
         <p class="page-section__paragraph page-section__paragraph--white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        -->
+
         <div class="row gutters-60">
           <div class="col-md-4">
             <div class="thumbnail text-center">
-              <img src="assets/images/adobe-photoshop.png" alt="">
-              <h4 class="skill__single-part__title">Microsoft Azure</h4>
+              <img src="assets/images/htmlcss.png" alt="">
+              <h4 class="skill__single-part__title">HTML+CSS <--- Intermediate</h4>
               <div class="progress">
                 <div class="progress-bar" role="progressbar" style="width:80%;background-color: #7FB7FA;">
                 </div>
@@ -125,8 +139,42 @@
           </div>
           <div class="col-md-4">
             <div class="thumbnail text-center">
-              <img src="assets/images/adobe-illustrator.png" alt="">
-              <h4 class="skill__single-part__title">Typing</h4>
+              <img src="assets/images/c++.png" alt="">
+              <h4 class="skill__single-part__title">C++ <--- Intermediate</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width:80%;background-color: #FFAC1B;;">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="thumbnail text-center">
+              <img src="assets/images/typing.png" alt="">
+              <h4 class="skill__single-part__title">Typing <--- Intermediate(40/WPM)</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width:80%;background-color: #C99AFF;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row gutters-60">
+          <div class="col-md-4">
+            <div class="thumbnail text-center">
+              <img src="assets/images/django.png" alt="">
+              <h4 class="skill__single-part__title">Django Framework <-- Beginner</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width:80%;background-color: #7FB7FA;">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail text-center">
+              <img src="assets/images/azure.png" alt="">
+              <h4 class="skill__single-part__title">Microsoft Azure <-- Beginner</h4>
               <div class="progress">
                 <div class="progress-bar" role="progressbar" style="width:80%;background-color: #FFAC1B;;">
                 </div>
@@ -135,8 +183,8 @@
           </div>
           <div class="col-md-4">
             <div class="thumbnail text-center">
-              <img src="assets/images/adobe-after-effects.png" alt="">
-              <h4 class="skill__single-part__title">Web Frontend</h4>
+              <img src="assets/images/python.png" alt="">
+              <h4 class="skill__single-part__title">Python Language <-- Beginner</h4>
               <div class="progress">
                 <div class="progress-bar" role="progressbar" style="width:80%;background-color: #C99AFF;">
                 </div>
@@ -144,36 +192,37 @@
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <section class="service">
+  <section class="service" id="services">
     <div class="container">
       <div class="page-section">
         <h2 class="page-section__title">MY SERVICES</h2>
         <img class="page-section__title-style" src="assets/images/title-style.png" alt="">
-        <p class="page-section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <p class="page-section__paragraph">I can give Services in the following Domains </p>
         <div class="row gutters-70">
           <div class="col-md-4">
             <div class="thumbnail text-center">
-              <img src="assets/images/logo-design.png" alt="">
+              <img src="assets/images/htmlcss.png" alt="">
               <h4 class="service__single-section__title">Frontend Development with Html & CSS</h4>
-              <p class="service__single-section__paragraph">magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              <p class="service__single-section__paragraph">I will write <strong>Html & CSS</strong> of given <strong>Designs</strong></p>
             </div>
           </div>
           <div class="col-md-4">
             <div class="thumbnail text-center">
-              <img src="assets/images/website-design.png" alt="">
+              <img src="assets/images/django.png" alt="">
               <h4 class="service__single-section__title">Backend Development with Django(Python)</h4>
-              <p class="service__single-section__paragraph">magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              <p class="service__single-section__paragraph">I will do <strong>beginner level</strong> Website <strong>backend</strong> Work in <strong>Django</strong></p>
             </div>
           </div>
           <div class="col-md-4">
             <div class="thumbnail text-center">
-              <img src="assets/images/support.png" alt="">
+              <img src="assets/images/python.png" alt="">
               <h4 class="service__single-section__title">Custom Python Coding</h4>
-              <p class="service__single-section__paragraph">magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              <p class="service__single-section__paragraph">I will do <strong>beginner level Programming</strong> in <strong>Python</strong></p>
             </div>
           </div>
         </div>
@@ -213,7 +262,7 @@
     </div>
   </section>
   
-  -->
+  
 
   <!--
 
@@ -652,23 +701,36 @@
 
   -->
 
-  <footer class="footer footer--bg">
+  <footer class="footer footer--bg" id="contact">
     <div class="container text-center">
-      <h1 class="footer__title">It's Zubair</h1>
+      <h1 class="footer__title">I'm Zubair</h1>
       <ul class="footer__contact-information">
-        <li><a href="tel:5555555555"><i class="material-icons">phone</i> Hotline (+123) 45 67 89 21</a></li>
-        <li><a href="mailto:sshariar458@gmail.com"><i class="material-icons">email</i> muhammad.zubair.i.am@gmail.com</a></li>
+        <li><a href="tel:+923088581073"><i class="material-icons">phone</i> (+92) 308 8581073</a></li>
+        <li><a href="mailto:muhammad.zubair.i.am@gmail.com"><i class="material-icons">email</i> muhammad.zubair.i.am@gmail.com</a></li>
+        <li><a href="https://iammuhammadzubair.github.io"><i class="material-icons">language</i>https://iammuhammadzubair.github.io</a></li>
+        
+        <!--
         <li><a href="#"><i class="material-icons">location_on</i> DartThemes address goes here.</a></li>
+        -->    
+
       </ul>
     </div>
     <hr style="border: 0;border-top: 1px solid #525B60;display:block;margin-top: 40px;">
     <div class="container text-center">
       <div class="social-icon">
         <ul>
+
+          <!--
           <li><a href="#"><i class="flaticon-facebook-letter-logo"></i></a></li>
           <li><a href="#"><i class="flaticon-twitter-logo"></i></a></li>
           <li><a href="#"><i class="flaticon-behance-logo"></i></a></li>
           <li><a href="#"><i class="flaticon-dribbble-logo"></i></a></li>
+          -->
+
+          <li><a href="https://www.linkedin.com/in/muhammad-zubair-b63547176/"><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a href="https://mobile.facebook.com/muhammadzubair.shafiq.7"><i class="flaticon-facebook-letter-logo"></i></a></li>
+          <li><a href="#"><i class="flaticon-twitter-logo"></i></a></li>
+
         </ul>
       </div>
       <p class="footer__paragraph">Copyright &copy; 2017 DartThemes , All Rights Reserved.</p>
@@ -680,10 +742,12 @@
   <script src="js/mixitup.js"></script>
 
   <script>
+    /*
     $('a').click(function(e)
       {
         e.preventDefault();
       });
+    */
 
     // calling mixitup
     var mixer = mixitup(".portfolio");
